@@ -12,8 +12,10 @@ droidalyzer [flags] [path]
 ### Flags
 
 The -sp flag indicates if a single project should be scanned
+
 The -lib flag indicates if projects should be scanned
 for networking libraries
+
 The -printLib flag indicates if information about libraries
 should be printed for every scanned project
 
