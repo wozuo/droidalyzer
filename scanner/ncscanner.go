@@ -6,6 +6,28 @@ import (
 	"github.com/wozuo/droidalyzer"
 )
 
+var jsonKeywords = []string{
+	"Moshi.Builder",
+	"@ToJson",
+	"@FromJson",
+	"@Json",
+	"@JsonQualifier",
+	"JsonAdapter",
+	"JSONTokener",
+	"getAsJsonArray",
+	"getAsJsonObject",
+	"JsonParser",
+	"jsonobject",
+	"Json.createObjectBuilder",
+	"Gson().toJson",
+	"toJson",
+	"JSONArray",
+	"GsonBuilder",
+	"gson",
+	"json",
+	"Moshi",
+}
+
 var networkingKeywords = []string{
 	"http",
 	"json",
@@ -67,7 +89,7 @@ func FindNetworkingCodeInProject(p *droidalyzer.Project) error {
 
 	for _, apf := range p.APFiles {
 		if apf.Extension == ".java" {
-			err := apf.Scan(&networkingKeywords)
+			err := apf.Scan(&jsonKeywords)
 			if err != nil {
 				return err
 			}

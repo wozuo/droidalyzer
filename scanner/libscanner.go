@@ -12,6 +12,7 @@ import (
 )
 
 var libraries = []string{
+	// Networking libraries
 	"com.squareup.retrofit",
 	"com.squareup.okhttp",
 	"com.github.bumptech.glide",
@@ -22,6 +23,9 @@ var libraries = []string{
 	"cz.msebera.android:httpclient", // dep from android async
 	"com.koushikdutta.ion",
 	"com.koushikdutta.async",
+	// JSON & XML libraries
+	"com.google.code.gson",
+	"com.squareup.moshi",
 }
 
 var sPrint = true
