@@ -12,6 +12,15 @@ import (
 )
 
 var libraries = []string{
+	// JSON & XML libraries
+	"com.google.code.gson",
+	"com.squareup.moshi",
+	"converter-jaxb",
+	"converter-simplexml",
+	"converter-jackson",
+	"com.fasterxml.jackson",
+	"javax.xml.stream:stax-api",
+	"com.stanfy:gson-xml-java",
 	// Networking libraries
 	"com.squareup.retrofit",
 	"com.squareup.okhttp",
@@ -23,9 +32,6 @@ var libraries = []string{
 	"cz.msebera.android:httpclient", // dep from android async
 	"com.koushikdutta.ion",
 	"com.koushikdutta.async",
-	// JSON & XML libraries
-	"com.google.code.gson",
-	"com.squareup.moshi",
 }
 
 var sPrint = true

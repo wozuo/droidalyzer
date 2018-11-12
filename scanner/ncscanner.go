@@ -6,6 +6,36 @@ import (
 	"github.com/wozuo/droidalyzer"
 )
 
+var xmlKeywords = []string{
+	"XmlPullParserFactory",
+	"XmlPullParser",
+	"XmlSerializer",
+	"SAXParserFactory",
+	"SAXParser",
+	"DefaultHandler",
+	"@XmlRootElement",
+	"@XmlElementWrapper",
+	"@XmlElement",
+	"@XmlType",
+	"JAXBContext",
+	"XmlMapper",
+	"@JacksonXmlProperty",
+	"@JacksonXmlRootElement",
+	"@JacksonXmlText",
+	"@JacksonXmlCData",
+	"@JacksonXmlElementWrapper",
+	"@Root",
+	"@ElementList",
+	"@Element",
+	"XMLInputFactory",
+	"XMLStreamReader",
+	"SimpleXmlConverterFactory",
+	"DocumentBuilderFactory",
+	"DocumentBuilder",
+	"Document",
+	"xml",
+}
+
 var jsonKeywords = []string{
 	"Moshi.Builder",
 	"@ToJson",
